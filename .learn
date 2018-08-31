@@ -1,6 +1,9 @@
 tags:
-  - a tag
+  - DOM
+  - events
+  - intro
+  - readme
 languages:
-  - a language
-resources: 
+  - javascript
+resources:
   - 0
