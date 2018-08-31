@@ -172,7 +172,8 @@ We learned a lot in this section. This is what we learned.
 - We can select a specific piece of the DOM by using Javascript, such as
   `document.querySelector('header')`, and we can also use Javascript to alter our
   DOM with `document.querySelector('header').remove()`
-- **To get your header back, just hit refresh**
+
+**To get your header back, just hit refresh**
 
 ### What's next
 
@@ -182,3 +183,5 @@ Next, we'll take a deeper look at how to select elements!
 
 - [CSS Tricks - What is the DOM?](https://css-tricks.com/dom/)
 - [MDN - The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-dom-and-events-intro-to-the-dom-readme'>Intro to the DOM</a> on Learn.co and start learning to code for free.</p>
