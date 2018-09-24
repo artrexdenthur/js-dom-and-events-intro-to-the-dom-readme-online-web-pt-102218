@@ -9,9 +9,9 @@ Object Model, or DOM, will give us the bridge to get there.
 
 ## Objectives
 
-1. Identify the Document Object Model
-2. Interact with the Document Object Model
-3. Explore how JavaScript manipulates the DOM
+1.  Identify the Document Object Model
+2.  Interact with the Document Object Model
+3.  Explore how JavaScript manipulates the DOM
 
 ## Identify the Document Object Model
 
@@ -26,13 +26,16 @@ them, delete them or modify them.
 To see the DOM in action, let's take a look at the HTML that constructs every
 website we visit.
 
-> **NOTE**: We recommend that you use Google Chrome.  (You can download chrome
+> **NOTE**: We recommend that you use Google Chrome. (You can download chrome
 > [here][chrome]). Because Chrome has several developer-friendly features, it's
 > a preferred development tool.
 
 ### Change the URL of a web page to view the source
 
-In a Google Chrome browser, go to the URL `https://learn.co/tracks/javascript-with-style`. To see the HTML of that page, add `view-source:` to the front of the URL. The complete final URL will be `view-source:https://learn.co/tracks /javascript-with-style`.
+In a Google Chrome browser, go to the URL
+`https://learn.co/tracks/welcome-to-learn-verified`. To see the HTML of that
+page, add `view-source:` to the front of the URL. The complete final URL will be
+`view-source:https://learn.co/tracks/welcome-to-learn-verified`.
 
 By using the `view-source` URL prefix, all the page's source HTML will be
 revealed to you. It will look something like this:
@@ -69,7 +72,7 @@ web page.
 The best way to understand the Document Object Model is to interact with it.
 Let's practice.
 
-1. Open the Google Developer console
+1.  Open the Google Developer console
 
 ![opening-console](https://s3.amazonaws.com/learn-verified/opening-console.gif)
 
@@ -77,10 +80,9 @@ Let's practice.
 > on "View", then select "Developer", then "Developer Tools". This will open the
 > Google Developer Console.
 
-2. Manipulate the DOM
+2.  Manipulate the DOM
 
 ![delete-header](http://web-dev-readme-photos.s3.amazonaws.com/js/header-click.png)
-
 
 When you open the Google Developer Console, you will see what looks like HTML.
 There are head tags, body tags, divs, etc. Now from inside the developer
@@ -100,8 +102,8 @@ inside.
 ![html-source](https://s3.amazonaws.com/learn-verified/html-javascript-lesson.png)
 
 The changes that the **developer console** caused, and the changes the
-**developer console** currently displays are changes in the *Document Object
-Model*, but not in our *HTML*. Our webpage now looks blank, reflecting the
+**developer console** currently displays are changes in the _Document Object
+Model_, but not in our _HTML_. Our webpage now looks blank, reflecting the
 missing header in our DOM, even though our HTML still has content in the header
 tags.
 
@@ -120,7 +122,7 @@ manipulate them, which changes what shows up in a browser window.
 
 Let's get to it.
 
-1. Use JavaScript to view the current representation of the DOM
+1.  Use JavaScript to view the current representation of the DOM
 
 From inside the developer console, click on the tab that says the word
 "console." At the bottom you will see a cursor. There, type the word `document`
@@ -133,7 +135,7 @@ source, the HTML is unchanged. Remember, this is the difference between the DOM
 (current representation of the page) and the HTML (the initial representation of
 the page).
 
-2. Use JavaScript to manipulate our DOM
+2.  Use JavaScript to manipulate our DOM
 
 **Refresh your browser to get the header back. Let's remove the header now with
 JavaScript.** Open up the console and type in the following and press "Enter."
@@ -142,8 +144,7 @@ JavaScript.** Open up the console and type in the following and press "Enter."
 document.querySelector('header');
 ```
 
-This will return something like this: `<header class="site-
-header">...</header>`. Go ahead and click on that display triangle to see more.
+This will return something like this: `<header class="site- header">...</header>`. Go ahead and click on that display triangle to see more.
 
 It retrieves the header tag, which contains the lesson title among other things.
 OK, now let's do something with this header. Open up the console, and type in
@@ -159,7 +160,6 @@ it is first rendered. Instead, we accessed the Document Object Model, which alte
 the model and that altered the appearance of our web page. This is the same as
 we did before, but with code. **To get the header back, just hit refresh.**
 
-
 ## Resources
 
 - [CSS Tricks - What is the DOM?](https://css-tricks.com/dom/)
@@ -167,10 +167,10 @@ we did before, but with code. **To get the header back, just hit refresh.**
 
 ## Conclusion
 
-* HTML is a markup language used to display content in a browser. When we change the appearance of a web page, what we are really changing is the Document Object Model, which directly determines the appearance displayed in the browser.
-* We can view and manipulate the Document Object Model by opening our developer tools, but when we do so the HTML is not changed.
-* We can also view our Document Object Model by opening the console and typing in the word `document`.
-* We can select a specific piece of the DOM by using JavaScript, such as `document.querySelector('header')`, and we can also use JavaScript to alter our DOM with `document.querySelector('header').remove()`
-* **To get your header back, just hit refresh**
+- HTML is a markup language used to display content in a browser. When we change the appearance of a web page, what we are really changing is the Document Object Model, which directly determines the appearance displayed in the browser.
+- We can view and manipulate the Document Object Model by opening our developer tools, but when we do so the HTML is not changed.
+- We can also view our Document Object Model by opening the console and typing in the word `document`.
+- We can select a specific piece of the DOM by using JavaScript, such as `document.querySelector('header')`, and we can also use JavaScript to alter our DOM with `document.querySelector('header').remove()`
+- **To get your header back, just hit refresh**
 
 [chrome]: https://www.google.com/chrome/browser/desktop/index.html
