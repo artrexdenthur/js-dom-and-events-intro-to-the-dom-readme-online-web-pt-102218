@@ -58,7 +58,6 @@ you may have seen previously.
   </body>
   <script src="https://raw.githubusercontent.com/learn-co-curriculum/js-and-the-web/master/spin.js" charset="utf-8"></script>
 </html>
-
 ```
 
 It may look like our browser is displaying the HTML that we see, but it is not.
@@ -75,12 +74,13 @@ Let's practice.
 ![opening-console](https://s3.amazonaws.com/learn-verified/opening-console.gif)
 
 > From this web page, look at the Chrome menubar at the top of the page. Click
-on "View", then select "Developer", then "Developer Tools". This will open the
-Google Developer Console.
+> on "View", then select "Developer", then "Developer Tools". This will open the
+> Google Developer Console.
 
 2. Manipulate the DOM
 
 ![delete-header](http://web-dev-readme-photos.s3.amazonaws.com/js/header-click.png)
+
 
 When you open the Google Developer Console, you will see what looks like HTML.
 There are head tags, body tags, divs, etc. Now from inside the developer
@@ -138,9 +138,9 @@ the page).
 **Refresh your browser to get the header back. Let's remove the header now with
 JavaScript.** Open up the console and type in the following and press "Enter."
 
-  ```javascript
-   document.querySelector('header')
-  ```
+```javascript
+document.querySelector('header');
+```
 
 This will return something like this: `<header class="site-
 header">...</header>`. Go ahead and click on that display triangle to see more.
@@ -150,7 +150,7 @@ OK, now let's do something with this header. Open up the console, and type in
 the following:
 
 ```javascript
-   document.querySelector('header').remove()
+document.querySelector('header').remove();
 ```
 
 Take a look at the top of the page again. The header is gone. But do you think
@@ -158,6 +158,7 @@ the HTML has just changed? Well, no. As you know, the HTML never changes after
 it is first rendered. Instead, we accessed the Document Object Model, which altered
 the model and that altered the appearance of our web page. This is the same as
 we did before, but with code. **To get the header back, just hit refresh.**
+
 
 ## Resources
 
